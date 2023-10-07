@@ -1,0 +1,29 @@
+// popilation total ==>
+function fun(user) {
+  let statet = dataa.filter((e) => {
+    return e.state_name === user;
+  });
+  let total = 0;
+  let city = statet.map((e) => {
+    total += +e.population;
+  });
+  return total;
+}
+let final = fun("Delhi");
+console.log("fgf", final);
+
+
+
+// city length find====>
+
+function fun1(user, mmcity) {
+  let fil = dataa.filter((e) => {
+    return e.state_name === user && e.city.length > mmcity;
+  });
+  let mappp = fil.map((e) => {
+    return e.city;
+  });
+  return mappp;
+}
+let fill = fun1("Delhi", 15);
+console.log("fill", fill);
